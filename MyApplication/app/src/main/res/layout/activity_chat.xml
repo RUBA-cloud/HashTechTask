@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".activity.ChatActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:background="@color/white"
+
+
+        app:title="Resturant List"
+        app:titleTextColor="@color/white"
+
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Chat List "
+        android:textColor="@color/black" />
+
+    <ImageButton
+        android:layout_alignParentRight="true"
+        android:id="@id/chatDetails"
+        android:layout_margin="16dp"
+        android:background="@drawable/ic_baseline_message_24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/></RelativeLayout></androidx.appcompat.widget.Toolbar>
+    <androidx.recyclerview.widget.RecyclerView
+
+        android:layout_margin="4dp"
+        android:id="@+id/chatList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
